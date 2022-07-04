@@ -49,7 +49,7 @@
       layers: [baselayers,overlayGroup],
       view: new ol.View({
         center: ol.proj.fromLonLat([11.25,48.20]),
-        zoom: 11
+        zoom: 12
       })
     });
   
