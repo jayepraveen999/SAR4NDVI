@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="utf-8">
+    <title>OpenLayers example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/build/ol.js"></script>
+    <style>
+
+      .map {
+        height: 500px;
+        width: 100%;
+      }
+
+
+    </style>
+  </head>
+
+
+  <body>
+
+    <h2>SAR4NDVI</h2>
+
+
+    <div id="map" class="map"></div>
+
+    <script type="text/javascript">
+
+    // ADDIG OVERLAYS
+
+    var ol1 = new ol.layer.Tile({
+        //   extent: [13884991, 2870341, -7455066, 6338219],
+          source: new ol.source.TileWMS({
+            url: 'http://localhost:8080/geoserver/sar4ndvi/wms',
+            params: {'LAYERS': 'sar4ndvi:Clip_NDVI', 'TILED': true},
+            // serverType: 'geoserver',
+            // // Countries have transparency, so do not fade tiles:
+            // transition: 0
+          })
+        })
+
+
+    var overlays = new ol.layer.Group({
+            title: 'Overlays',
+            layers: [ol1]
+        });
+
+
+      var map = new ol.Map({
+        layers: [overlays],
+        target: 'map',
+        view: new ol.View({
+        center: ol.proj.fromLonLat([11.25,48.20]),
+        zoom: 14
+        })
+      });
+
+
+    </script>
+  </body>
+</html>
