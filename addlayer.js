@@ -45,7 +45,7 @@
 
     var sen1 = new ol.layer.Tile({
             title: '2019_01_10',
-            visible: true,
+            visible: false,
             source: new ol.source.TileWMS({
              url: 'http://localhost:8080/geoserver/wms',
              params: {'LAYERS': 'SAR4NDVI_Sentinel_1:2019_01_10', 'TILED': false},
@@ -253,11 +253,11 @@
 
 overlayGroup2.getLayers().push(
   new ol.layer.Tile({
-      title: '02_20190211',
+      title: '02_20190211_p',
       visible: false,
         source: new ol.source.TileWMS({
           url: 'http://localhost:8080/geoserver/wms',
-          params: {'LAYERS': 'SAR4NDVI_Sentinel_2:02_20190211', 'TILED': true},
+          params: {'LAYERS': 'SAR4NDVI_DL_OUTPUT:02_20190211_p', 'TILED': true},
           // serverType: 'geoserver',
           // // Countries have transparency, so do not fade tiles:
           // transition: 0
@@ -269,11 +269,11 @@ overlayGroup2.getLayers().push(
 
 overlayGroup2.getLayers().push(
   new ol.layer.Tile({
-      title: '27_20191208',
+      title: '27_20191208_p',
       visible: false,
         source: new ol.source.TileWMS({
           url: 'http://localhost:8080/geoserver/wms',
-          params: {'LAYERS': 'SAR4NDVI_Sentinel_2:27_20191208', 'TILED': true},
+          params: {'LAYERS': 'SAR4NDVI_DL_OUTPUT:27_20191208_p', 'TILED': true},
           // serverType: 'geoserver',
           // // Countries have transparency, so do not fade tiles:
           // transition: 0
@@ -285,11 +285,11 @@ overlayGroup2.getLayers().push(
 
   overlayGroup2.getLayers().push(
     new ol.layer.Tile({
-        title: '51_20200923',
+        title: '51_20200923_p',
         visible: false,
           source: new ol.source.TileWMS({
             url: 'http://localhost:8080/geoserver/wms',
-            params: {'LAYERS': 'SAR4NDVI_Sentinel_2:51_20200923', 'TILED': true},
+            params: {'LAYERS': 'SAR4NDVI_DL_OUTPUT:51_20200923_p', 'TILED': true},
             // serverType: 'geoserver',
             // // Countries have transparency, so do not fade tiles:
             // transition: 0
@@ -301,11 +301,11 @@ overlayGroup2.getLayers().push(
   
     overlayGroup2.getLayers().push(
       new ol.layer.Tile({
-          title: '37_20200411',
+          title: '37_20200411_p',
           visible: false,
             source: new ol.source.TileWMS({
               url: 'http://localhost:8080/geoserver/wms',
-              params: {'LAYERS': 'SAR4NDVI_Sentinel_2:37_20200411', 'TILED': true},
+              params: {'LAYERS': 'SAR4NDVI_DL_OUTPUT:37_20200411_p', 'TILED': true},
               // serverType: 'geoserver',
               // // Countries have transparency, so do not fade tiles:
               // transition: 0
@@ -317,11 +317,11 @@ overlayGroup2.getLayers().push(
 
       overlayGroup2.getLayers().push(
         new ol.layer.Tile({
-            title: '23_20191019',
+            title: '23_20191019_p',
             visible: false,
               source: new ol.source.TileWMS({
                 url: 'http://localhost:8080/geoserver/wms',
-                params: {'LAYERS': 'SAR4NDVI_Sentinel_2:23_20191019', 'TILED': true},
+                params: {'LAYERS': 'SAR4NDVI_DL_OUTPUT:23_20191019_p', 'TILED': true},
                 // serverType: 'geoserver',
                 // // Countries have transparency, so do not fade tiles:
                 // transition: 0
@@ -333,11 +333,11 @@ overlayGroup2.getLayers().push(
 
 overlayGroup2.getLayers().push(
   new ol.layer.Tile({
-      title: '00_20190117',
+      title: '00_20190117_p',
       visible: false,
         source: new ol.source.TileWMS({
           url: 'http://localhost:8080/geoserver/wms',
-          params: {'LAYERS': 'SAR4NDVI_Sentinel_2:00_20190117', 'TILED': true},
+          params: {'LAYERS': 'SAR4NDVI_DL_OUTPUT:00_20190117_p', 'TILED': true},
           // serverType: 'geoserver',
           // // Countries have transparency, so do not fade tiles:
           // transition: 0
