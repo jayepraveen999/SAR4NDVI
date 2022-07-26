@@ -61,8 +61,7 @@
   }
 
   .ol-overlay.menu
-		{	width: 37%;
-      height: 97%;
+		{	width: 25%;
 			background: rgb(248, 248, 248);
 			color: #333;
 			box-shadow: 0px 0px 5px #000;
@@ -96,63 +95,32 @@
 		.ol-control.menu i
 		{	color: #fff;
 		}
-
-    #legend {
-            z-index: 11;
-            padding: 2px 8px;
-            /* border: 2px solid grey; */
-            position: absolute;
-            bottom: 34px;
-            height: 23%;
-            overflow: scroll;
-            width:14%;
-            right: 0em;
-            background-color: #ffffff;
-            font-weight: bold;
-        }
-		/* .data, .data2,
-		.data p, .data2 p
+		.data,
+		.data p
 		{	margin:0;
 			text-align: center;
 			font-size:0.9em;
-		} */
+		}
 </style>
   </head>
 
   <body>
 
-    <h1 id = 'main-heading'>SAR4NDVI: A deep learning tool to calculate NDVI for Cloudy Sentinel Images <a href="https://github.com/" target="_blank" style="color: white; padding-left: 100px;">GitHub Repo</a> <a href="https://docs.google.com/presentation/d/17iDf7KlAf-bJmpTbPCHdkzTvfhQXRurD9ljdFy_thwI/edit?usp=drive_web&ouid=109826764696244383228" target="_blank" style="padding-left:20px; color: white">Our Idea</a></h1>
+    <h1 id = 'main-heading'>SAR4NDVI: A deep learning tool to calculate NDVI for Cloudy Sentinel Images</h1>
 
-    <div id="map" class = "map">
-      <div id="legend">
-        <!-- <b style="color:red; font-size:14px">Cloudy NDVI Values: </b>
-        <div id='cloudy'style="color:red; font-size:14px"></div>
-        <b style="color:green;font-size:14px">Cloud Free NDVI Values: </b>
-        <div id = 'cloudfree' style="color:green;font-size:14px"></div> -->
-      </div>
-
-    </div>
+    <div id="map" class = "map"></div>
     <div id="menu">
       <h1 id = 'sub-heading-inside-menu'>NDVI Values</h1>
       <h3 style="border-bottom:1px solid #999;">
         <b>SAR4NDVI:  </b>  This field is used to display the NDVI values of the selected layers in groups.
       </h3>
-      <b style="color:red; font-size:14px">Cloudy NDVI Values: </b>
-      <canvas id="myChart" style="width:100%;max-width:100%;max-height:100%;"></canvas>
-
       <div id="data">
       </div>
-      <b style="color:green;font-size:14px">Cloud Free NDVI Values: </b>
-      <canvas id="myChart2" style="width:100%;max-width:100%;max-height:100%;"></canvas>
-
-      <div id="data2">
-      </div>
-
-      <!-- <canvas id="myChart" style="width:100%;max-width:100%;max-height:100%;"></canvas> -->
+      <canvas id="myChart" style="width:100%;max-width:100%;max-height:100%;"></canvas>
 
     </div>
     <script src="dist/ol-layerswitcher.js"></script>
-    <script src="addlayer.js"></script>
+    <script src="addlayer2.js"></script>
 
   </body>
 </html>

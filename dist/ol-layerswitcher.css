@@ -1,7 +1,7 @@
 .layer-switcher {
-    position: left;
-    top: 7em;
-    left: 0.5em;
+    position: right;
+    top: 7.5em;
+    right: 0.5em;
     text-align: left;
   }
   
@@ -177,8 +177,8 @@
   }
   
   /* layerswitcher on the left*/
-
-  /* .layer-switcher.shown.layer-switcher-activation-mode-click {
+/* 
+  .layer-switcher.shown.layer-switcher-activation-mode-click {
     padding-right: 34px;
   }
   .layer-switcher.shown.layer-switcher-activation-mode-click > button {

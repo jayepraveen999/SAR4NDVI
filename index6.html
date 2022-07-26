@@ -30,6 +30,13 @@
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,Object.assign,Event,URL"></script>
     <script src="https://openlayers.org/en/v6.1.1/build/ol.js"></script>
 
+    <style>
+      .map{
+            width: 100%;
+            height:600px;
+      }
+    </style>
+
   </head>
 
   <body>
@@ -37,6 +44,7 @@
     <h1 style="text-align:center;">SAR4NDVI: A deep learning tool to calculate NDVI for Cloudy Sentinel Images</h1>
 
     <div id="map" class = "map"></div>
+    <div id = 'info'>&nbsp;</div>
     <script src="dist/ol-layerswitcher.js"></script>
     <script src="addlayer.js"></script>
 
